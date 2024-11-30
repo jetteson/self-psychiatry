@@ -200,18 +200,66 @@ svg.web-divider{
     }
 
 
-
 /* Progress bar */
 #progress-bar {
     position: fixed;
     top: 0;
     left: 0;
+    width: 0;
     height: 5px;
     background-color: #BF00FF;
-    width: 0;
-    z-index: 1000;
+    z-index: 9999;
+    transition: width 0.1s ease-out;
 }
 
+/* Back to top button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #BF00FF;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 9999;
+    display: none;
+}
+
+#back-to-top::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    mask: url('data:image/svg+xml,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 viewBox%3D%220 0 330 330%22%3E%3Cpath d%3D%22M325.606%2C229.393l-150.004-150C172.79%2C76.58%2C168.974%2C75%2C164.996%2C75c-3.979%2C0-7.794%2C1.581-10.607%2C4.394l-149.996%2C150c-5.858%2C5.858-5.858%2C15.355%2C0%2C21.213c5.857%2C5.857%2C15.355%2C5.858%2C21.213%2C0l139.39-139.393l139.397%2C139.393C307.322%2C253.536%2C311.161%2C255%2C315%2C255c3.839%2C0%2C7.678-1.464%2C10.607-4.394C331.464%2C244.748%2C331.464%2C235.251%2C325.606%2C229.393z%22/%3E%3C/svg%3E');
+    mask-size: cover;
+    background-color: #FFFFFF;
+}
+
+/* Button hover effect */
+#back-to-top:hover {
+    background-color: #9C00CC;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #back-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    #back-to-top::before {
+        width: 16px;
+        height: 16px;
+    }
+}
 
 
 }
