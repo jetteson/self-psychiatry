@@ -212,34 +212,6 @@ svg.web-divider{
     z-index: 1000;
 }
 
-/* Back to top button */
-#back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background-color: #BF00FF;
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
 
-#back-to-top:hover {
-    background-color: #9C00CC;
-}
-
-/* Content styles */
-.content {
-    padding: 20px;
-}
 
 }
