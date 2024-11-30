@@ -9,6 +9,15 @@
 </head>
 <body>
 
+    <div id="progress-bar"></div>
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+    <div class="content">
+<!--         <h1>Scroll Down to Test</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia, sem nec feugiat fermentum, erat orci tincidunt arcu, ut auctor lacus velit at justo. Repeat to add scrollable content...</p>
+        <p style="margin-bottom: 2000px;">More content for scrolling!</p> -->
+    </div>
+    <script src="script.js"></script>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,11 +96,15 @@
             	font-style: italic;
             	width: 400px;
             }
-        #reference-subtitle{
-
-            font-size: 14px;
+        .reference-subtitle {
+            display: block;
+            font-size: 13px;
+            max-width: 700px;
             
                 }
+        .reference-subtitle, .reference-subtitle a{
+             color: #333;
+        }
         }
     </style>
 </head>
@@ -100,7 +113,7 @@
  
     		
     	<ul>
-    		<li><div class="circle"></div><br><br>Mental health self-management for residents of Saskatchewan.<br><br>
+    		<li><div class="circle"></div><br><br>Depression recovery resource for the people of Saskatchewan. <span class="reference-subtitle"><br><br>This website does not contain medical advice and should not be used or relied upon for any diagnostic or treatment purposes; instead, it is meant to provide resources and information that may be beneficial to your recovery goals.</span>
     		</li>
     
     		<li><a href="clinical.html">Clinical Recovery</a> Symptom reduction and prevention of harm.</li>
@@ -109,13 +122,16 @@
     		 <li><a href="existential.html">Existential Recovery</a>Developing a sense of self-efficacy and meaning. </li>
     		 <li><a href="physical.html">Physical Recovery</a>Pursuing physical health and the benefits of excercise on mental health. </li>
              <br>
-             <li><span id="reference-subtitle">This resource uses the framework outlined <a  class="simple-link" href="https://pubmed.ncbi.nlm.nih.gov/21123410/">here</a>, the related model described <a class="simple-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6550311/">here</a>, and sources psychiatric information from <a  class="simple-link" href="https://books.google.ca/books/about/Kaplan_Sadock_s_Comprehensive_Textbook_o.html?id=gsDljwEACAAJ&redir_esc=y">here</a>. A more detailed breakdown of references is <a class="simple-link" href="references.html">here</a>.</span></li>
+             <li><span class="reference-subtitle">This resource uses the framework outlined <a  class="simple-link" href="https://pubmed.ncbi.nlm.nih.gov/21123410/">here</a>, the related model described <a class="simple-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6550311/">here</a>, and sources psychiatric information from <a  class="simple-link" href="https://books.google.ca/books/about/Kaplan_Sadock_s_Comprehensive_Textbook_o.html?id=gsDljwEACAAJ&redir_esc=y">here</a>. A more detailed breakdown of references is <a class="simple-link" href="references.html">here</a>.
+             </span></li>
              
     	</ul>
 
 
     
     </section>
+
+
 </body>
 </html>
 
